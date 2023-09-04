@@ -1,0 +1,62 @@
+/* src/components/MiniNavbar/MiniNavbar.css */
+.mini-navbar {
+    background-color: transparent; /* Fondo transparente */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  .mini-navbar-button {
+    border: 2px solid transparent; /* Borde transparente inicialmente */
+    padding: 8px 16px;
+    margin: 0 10px; /* Espacio entre botones */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave de colores */
+  }
+  
+  .mini-navbar-button:hover {
+    background-color: #28a745; /* Cambia el color de fondo al pasar el ratón sobre el botón */
+    border-color: #28a745; /* Cambia el color del borde al pasar el ratón sobre el botón */
+    color: #fff; /* Cambia el color del texto al pasar el ratón sobre el botón */
+  }
+  
+  .mini-navbar-dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px; /* Espacio a cada lado del menú desplegable */
+  }
+  
+  .mini-navbar-dropdown-button {
+    border: 2px solid transparent; /* Borde transparente inicialmente */
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave de colores */
+  }
+  
+  .mini-navbar-dropdown-button:hover {
+    background-color: #28a745; /* Cambia el color de fondo al pasar el ratón sobre el botón del menú desplegable */
+    border-color: #28a745; /* Cambia el color del borde al pasar el ratón sobre el botón del menú desplegable */
+    color: #fff; /* Cambia el color del texto al pasar el ratón sobre el botón del menú desplegable */
+  }
+  
+  .mini-navbar-hours {
+    position: absolute;
+    background-color: #343a40; /* Cambia el color de fondo del menú desplegable según tus preferencias */
+    color: #fff; /* Cambia el color del texto del menú desplegable según tus preferencias */
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    top: 100%; /* Coloca el menú desplegable debajo del botón */
+    left: 0;
+    border-radius: 4px;
+    display: none;
+  }
+  
+  .mini-navbar-dropdown:hover .mini-navbar-hours {
+    display: block; /* Muestra el menú desplegable al pasar el ratón sobre el botón del menú desplegable */
+  }
+  

@@ -1,0 +1,18 @@
+/* src/components/Searchbar/Searchbar.css */
+.searchbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    margin-right: 10px; /* Espacio a la derecha del campo de entrada */
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombreado ligero */
+    flex-grow: 1; /* Expande el campo de entrada para que ocupe todo el espacio disponible */
+  }
+  
+  /* Puedes personalizar aún más estos estilos según tus preferencias */
+  

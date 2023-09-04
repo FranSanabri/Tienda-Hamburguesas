@@ -1,0 +1,19 @@
+/* Estilos generales para dispositivos móviles */
+.banner {
+    text-align: center;
+  }
+  
+  .banner-image {
+    width: 100%; /* Cambia el ancho de la imagen al 100% para que ocupe todo el ancho */
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sutil sombra para la imagen */
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 768px) {
+    .banner-image {
+        margin-top: 50px;
+      max-width: 100%; /* Reduce el ancho máximo de la imagen al 80% en pantallas más pequeñas */
+    }
+  }
+  

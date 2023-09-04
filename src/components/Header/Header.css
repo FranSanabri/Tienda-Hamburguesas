@@ -1,0 +1,77 @@
+/* src/components/Header/Header.css */
+.header {
+    background-color: #f8f9fa; /* Cambia el color de fondo según tus preferencias */
+    padding: 12px 0; /* Espacio vertical ligeramente reducido */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sutil sombra para elevación */
+    position: fixed; /* Encabezado fijo en la parte superior */
+    top: 0; /* Fija el encabezado en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 999; /* Asegura que el encabezado esté por encima del contenido */
+  }
+  
+  .company-icon {
+    text-decoration: none;
+    font-size: 24px; /* Cambia el tamaño del icono de la empresa según tus preferencias */
+    color: #333; /* Cambia el color del icono según tus preferencias */
+    margin-left: 20px; /* Añade margen izquierdo al icono */
+    font-weight: bold; /* Texto en negrita */
+  }
+
+  
+  .header-nav {
+    margin-right: 20px; /* Añade margen derecho al nav */
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* Espacio entre elementos de navegación */
+    font-size: 16px; /* Tamaño de fuente de los elementos de navegación reducido */
+    color: #555; /* Cambia el color del texto según tus preferencias */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transición suave para el color del texto */
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento */
+  }
+
+  /* Cambio de color al pasar el mouse por encima */
+  .nav-item:hover {
+    color: #28a745; /* Cambia el color al verde (puedes elegir tu propio color) */
+  }
+
+
+  /* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .header {
+      padding: 10px 0; /* Espacio vertical reducido para dispositivos móviles */
+      margin-top: -12px; /* Margen superior negativo para eliminar el espacio adicional */
+    }
+  
+    .company-icon {
+      font-size: 20px; /* Tamaño del icono de la empresa para dispositivos móviles */
+      margin-left: 10px; /* Margen izquierdo reducido para dispositivos móviles */
+    }
+  
+    .nav-list {
+      flex-direction: row; /* Alinea los elementos de navegación en una fila */
+    }
+  
+    .nav-item {
+      font-size: 12px; /* Tamaño de fuente reducido para dispositivos móviles */
+      margin-right: 10px; /* Espacio entre elementos de navegación para dispositivos móviles */
+    }
+  }
+  

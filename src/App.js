@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import './App.css'; // Importa tu archivo CSS global si lo tienes
+import Header from './components/Header/Header';
+import Box from './components/Box/Box'; // Incluye el componente Box
+import MiniNavbar from './components/MiniNavbar/MiniNavbar';
+import ImageForTheBanner from './components/ImageForTheBanner/ImageForTheBanner';
+import CarritoIcon from './components/CarritoIcon/CarritoIcon';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <ImageForTheBanner />
+      <MiniNavbar />
+      <Box /> {/* Coloca el componente Box aquí */}
+      <CarritoIcon />
     </div>
   );
 }
