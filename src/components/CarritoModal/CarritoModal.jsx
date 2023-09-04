@@ -24,6 +24,9 @@ const CarritoModal = ({ carrito, closeModal, eliminarDelCarrito, carritoModalAbi
         ) : (
           carrito.map((producto) => (
             <div className="carrito-item" key={producto.id}>
+              <div>
+                <img src={producto.image} alt={producto.name} className="carrito-item-image" />
+              </div>
               <div>{producto.name}</div>
               <div>1</div>
               <div>${producto.price.toFixed(2)}</div>

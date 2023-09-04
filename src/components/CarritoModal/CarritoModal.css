@@ -81,3 +81,21 @@ button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
+
+.carrito-item-image {
+  max-width: 200px; /* Tamaño máximo de la imagen */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+  margin-right: 10px; /* Espacio entre la imagen y el nombre del producto (ajusta según tus preferencias) */
+}
+
+/* Estilo para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+  
+  .carrito-item-image {
+    max-width: 80px; /* Tamaño máximo de la imagen en dispositivos móviles */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    margin-right: 10px; /* Espacio entre la imagen y el nombre del producto en dispositivos móviles */
+  }
+
+  /* Agrega otros estilos específicos para dispositivos móviles aquí */
+}
