@@ -7,18 +7,18 @@ import HamburgersList from '../HamburgersList/HamburgersList';
 import BebidasList from '../BebidasList/BebidasList'; // Importa el componente BebidasList
 import HamburgersWithoutTaccList from '../HamburgersWithoutTaccList/HamburgersWithoutTaccList';
 
-const Box = () => {
+const Box = ({ agregarAlCarrito } ) => {
   return (
     <div className="box">
       <div className="box-content">
         <Searchbar />
         <ClickableIcons />
         <hr />
-        <HamburgersList />
+        <HamburgersList agregarAlCarrito={agregarAlCarrito}/>
         <hr />
-        <BebidasList /> {/* Agrega la lista de bebidas aquí */}
+        <BebidasList agregarAlCarrito={agregarAlCarrito}/> {/* Agrega la lista de bebidas aquí */}
         <hr />
-        <HamburgersWithoutTaccList />
+        <HamburgersWithoutTaccList agregarAlCarrito={agregarAlCarrito}/>
       </div>
     </div>
   );

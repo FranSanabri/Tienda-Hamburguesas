@@ -1,13 +1,15 @@
-// src/components/CarritoIcon/CarritoIcon.js
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import './CarritoIcon.css';
+import CarritoModal from '../CarritoModal/CarritoModal';
 
-const CarritoIcon = () => {
+const CarritoIcon = ({ openCarritoModal }) => {
   return (
-    <div className="carrito-icon">
-      <FontAwesomeIcon icon={faShoppingCart} />
+    <div>
+      <div className="carrito-icon" onClick={openCarritoModal}>
+        <FontAwesomeIcon icon={faShoppingCart} />
+      </div>
     </div>
   );
 };

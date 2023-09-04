@@ -63,10 +63,12 @@
     .company-icon {
       font-size: 20px; /* Tamaño del icono de la empresa para dispositivos móviles */
       margin-left: 10px; /* Margen izquierdo reducido para dispositivos móviles */
+      margin-top: 5px;
     }
   
     .nav-list {
       flex-direction: row; /* Alinea los elementos de navegación en una fila */
+      margin-top: 10px;
     }
   
     .nav-item {

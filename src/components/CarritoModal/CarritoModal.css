@@ -1,0 +1,83 @@
+/* Estilos para el modal del carrito en dispositivos móviles */
+.carrito-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: scroll; /* Habilita el desplazamiento vertical si es necesario */
+}
+
+/* Estilos para el fondo semi transparente del modal en dispositivos móviles */
+.carrito-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Estilos para la lista de productos en el carrito en dispositivos móviles */
+.carrito-lista {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para cada elemento en la lista del carrito en dispositivos móviles */
+.carrito-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Estilos para los elementos individuales en la lista del carrito en dispositivos móviles */
+.carrito-item div {
+  flex: 1;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Estilos para el precio total en dispositivos móviles */
+.precio-total {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Estilos para el botón de cerrar el modal en dispositivos móviles */
+button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  max-width: 200px;
+  width: 100%;
+}
+
+/* Estilos para el botón de cerrar el modal al pasar el mouse en dispositivos móviles */
+button:hover {
+  background-color: #ff4500;
+}
+
+/* Estilos para el botón de cerrar el modal cuando está deshabilitado en dispositivos móviles */
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
